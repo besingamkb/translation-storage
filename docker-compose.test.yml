@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+    volumes:
+      - .:/var/www/html
+      - ./storage:/var/www/html/storage
+    environment:
+      - APP_ENV=testing
+      - DB_CONNECTION=sqlite
+      - DB_DATABASE=:memory:
+    command: php artisan test --coverage 
