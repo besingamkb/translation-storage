@@ -167,7 +167,7 @@ This provides a full list of endpoints, request/response formats, and allows you
 ```bash
 # Clone the repository (if not already done)
 git clone <your-repo-url>
-cd testaug8
+cd <project-directory>
 
 # Copy the Docker environment file
 cp docker.env .env
