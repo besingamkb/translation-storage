@@ -79,6 +79,7 @@ Services/UserService ................................................ 100.0%
   chmod +x pest-coverage.sh
   ./pest-coverage.sh
   ```
+  coverage is in this location `projectfolder/coverage/`
 
 ### Project Structure
 - `app/` - Application logic (Controllers, Models, Services, Repositories)
