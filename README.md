@@ -1,3 +1,15 @@
+## About the Service and Repository Pattern
+
+This project uses the Service and Repository pattern to promote clean architecture and maintainable code:
+
+- **Repositories** encapsulate all data access logic, acting as a layer between the application and the data source (such as the database). This keeps controllers and services decoupled from direct data access and makes the codebase easier to test and maintain.
+- **Services** contain business logic and orchestrate one or more repositories or other services. They provide a clean API for controllers, keeping them focused on handling HTTP requests and responses.
+
+This separation of concerns makes the codebase modular, testable, and easier to extend.
+
+
+
+## pest coverage
 ```
 Tests:    313 passed (651 assertions)
 Duration: 12.57s
